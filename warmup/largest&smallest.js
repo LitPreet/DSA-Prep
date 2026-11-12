@@ -88,7 +88,7 @@ function secondLagest(arr){
         if(arr[i]>largest){
             secondLagest = largest
             largest = arr[i]
-        }else if(arr[i] > secondLagest){
+        }else if(arr[i] > secondLagest && arr[i] !== largest){
             secondLagest = arr[i]
         }
     }
