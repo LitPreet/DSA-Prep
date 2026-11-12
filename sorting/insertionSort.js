@@ -17,10 +17,10 @@ function selectionSort(arr) {
         
         // Iterate and swap elements in backward direction
         // till number is greater then the key
-        for (j; j >= 0, arr[j]>key; --j){
+        while (j >= 0 && arr[j]>key){
             arr[j+1]=arr[j];
+            j--;
         }
-        // Swap the key to right position
         arr[j+1]=key;
     }
 }
