@@ -79,3 +79,20 @@ for(let i = 0; i<arr.length-1; i++){
     }
 }
 console.log(neg, pos)
+
+function secondLagest(arr){
+    let largest = -Infinity
+    let secondLagest = -Infinity
+
+    for(let i = 0; i<arr.length-1; i++){
+        if(arr[i]>largest){
+            secondLagest = largest
+            largest = arr[i]
+        }else if(arr[i] > secondLagest){
+            secondLagest = arr[i]
+        }
+    }
+return [largest, secondLagest]
+}
+
+console.log(secondLagest(arr))
