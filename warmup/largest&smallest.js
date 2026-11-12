@@ -95,4 +95,17 @@ function secondLagest(arr){
 return [largest, secondLagest]
 }
 
+
+
 console.log(secondLagest(arr))
+
+
+let d  = [1, 2, 4, 5, 6]
+let n = d.length
+let sum = n*(n+1)/2
+let partialSum = 0;
+
+for(let i = 0; i<n; i++){
+    partialSum += d[i]
+}
+console.log(sum-partialSum)
