@@ -84,7 +84,7 @@ function secondLagest(arr){
     let largest = -Infinity
     let secondLagest = -Infinity
 
-    for(let i = 0; i<arr.length-1; i++){
+    for(let i = 0; i<arr.length; i++){
         if(arr[i]>largest){
             secondLagest = largest
             largest = arr[i]
