@@ -139,3 +139,17 @@ function rotateRight(nums, k) {
     return nums
 }
 console.log(rotateRight([1, 2, 3, 4, 5, 6, 7], 3)) // [5, 6, 7, 1, 2, 3, 4]
+
+
+// ===== EASY: Two Sum (return indices of two numbers adding to target) =====
+// Store seen values in a map; for each num check if (target - num) was seen. O(n) time, O(n) space.
+function twoSum(nums, target) {
+    const seen = new Map()
+    for (let i = 0; i < nums.length; i++) {
+        const need = target - nums[i]
+        if (seen.has(need)) return [seen.get(need), i]
+        seen.set(nums[i], i)
+    }
+    return []
+}
+console.log(twoSum([2, 7, 11, 15], 9)) // [0, 1]
