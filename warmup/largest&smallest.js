@@ -109,3 +109,14 @@ for(let i = 0; i<n; i++){
     partialSum += d[i]
 }
 console.log(sum-partialSum)
+
+// ===== EASY: Check if array is sorted (non-decreasing) =====
+// Compare each element with the previous one. O(n) time, O(1) space.
+function isSorted(nums) {
+    for (let i = 1; i < nums.length; i++) {
+        if (nums[i] < nums[i - 1]) return false
+    }
+    return true
+}
+console.log(isSorted([1, 2, 2, 5, 9])) // true
+console.log(isSorted([3, 1, 4]))       // false
