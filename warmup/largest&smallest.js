@@ -153,3 +153,17 @@ function twoSum(nums, target) {
     return []
 }
 console.log(twoSum([2, 7, 11, 15], 9)) // [0, 1]
+
+
+// ===== MEDIUM: Maximum Subarray Sum (Kadane's Algorithm) =====
+// Keep a running sum; if it drops below the current element, start fresh from it. O(n) time, O(1) space.
+function maxSubArray(nums) {
+    let current = nums[0]
+    let best = nums[0]
+    for (let i = 1; i < nums.length; i++) {
+        current = Math.max(nums[i], current + nums[i])
+        best = Math.max(best, current)
+    }
+    return best
+}
+console.log(maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4])) // 6  -> [4, -1, 2, 1]
