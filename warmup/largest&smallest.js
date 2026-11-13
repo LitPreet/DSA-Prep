@@ -120,3 +120,22 @@ function isSorted(nums) {
 }
 console.log(isSorted([1, 2, 2, 5, 9])) // true
 console.log(isSorted([3, 1, 4]))       // false
+
+
+// ===== EASY: Rotate array right by k steps =====
+// Reverse whole array, then reverse first k, then reverse the rest. O(n) time, O(1) space.
+function rotateRight(nums, k) {
+    k = k % nums.length
+    const reverse = (l, r) => {
+        while (l < r) {
+            [nums[l], nums[r]] = [nums[r], nums[l]]
+            l++
+            r--
+        }
+    }
+    reverse(0, nums.length - 1)
+    reverse(0, k - 1)
+    reverse(k, nums.length - 1)
+    return nums
+}
+console.log(rotateRight([1, 2, 3, 4, 5, 6, 7], 3)) // [5, 6, 7, 1, 2, 3, 4]
