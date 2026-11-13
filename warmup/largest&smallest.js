@@ -196,3 +196,23 @@ function majorityElement(nums) {
     return candidate
 }
 console.log(majorityElement([2, 2, 1, 1, 1, 2, 2])) // 2
+
+
+// ===== MEDIUM: Product of Array Except Self (no division) =====
+// Pass 1: result[i] = product of everything to the left.
+// Pass 2: multiply by running product of everything to the right. O(n) time, O(1) extra space.
+function productExceptSelf(nums) {
+    const result = new Array(nums.length).fill(1)
+    let left = 1
+    for (let i = 0; i < nums.length; i++) {
+        result[i] = left
+        left *= nums[i]
+    }
+    let right = 1
+    for (let i = nums.length - 1; i >= 0; i--) {
+        result[i] *= right
+        right *= nums[i]
+    }
+    return result
+}
+console.log(productExceptSelf([1, 2, 3, 4])) // [24, 12, 8, 6]
