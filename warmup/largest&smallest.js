@@ -167,3 +167,17 @@ function maxSubArray(nums) {
     return best
 }
 console.log(maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4])) // 6  -> [4, -1, 2, 1]
+
+
+// ===== MEDIUM: Best Time to Buy and Sell Stock (one transaction) =====
+// Track the lowest price so far; profit = today's price - lowest. O(n) time, O(1) space.
+function maxProfit(prices) {
+    let minPrice = Infinity
+    let profit = 0
+    for (let i = 0; i < prices.length; i++) {
+        minPrice = Math.min(minPrice, prices[i])
+        profit = Math.max(profit, prices[i] - minPrice)
+    }
+    return profit
+}
+console.log(maxProfit([7, 1, 5, 3, 6, 4])) // 5  (buy at 1, sell at 6)
