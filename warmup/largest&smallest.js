@@ -181,3 +181,18 @@ function maxProfit(prices) {
     return profit
 }
 console.log(maxProfit([7, 1, 5, 3, 6, 4])) // 5  (buy at 1, sell at 6)
+
+
+// ===== MEDIUM: Majority Element (appears more than n/2 times) =====
+// Boyer-Moore voting: same element -> count++, different -> count--, count 0 -> pick new candidate.
+// O(n) time, O(1) space.
+function majorityElement(nums) {
+    let candidate = null
+    let count = 0
+    for (let i = 0; i < nums.length; i++) {
+        if (count === 0) candidate = nums[i]
+        count += nums[i] === candidate ? 1 : -1
+    }
+    return candidate
+}
+console.log(majorityElement([2, 2, 1, 1, 1, 2, 2])) // 2
