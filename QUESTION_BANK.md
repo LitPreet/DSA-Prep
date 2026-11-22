@@ -178,7 +178,7 @@ Frontend interviews are mostly **Easy–Medium**. Hard problems are optional. Do
 - [ ] 344 Reverse String · [ ] 977 Squares of Sorted Array · [ ] 42 Trapping Rain Water (hard)
 
 ### Sliding Window
-- [ ] ★ 3 Longest Substring Without Repeating · [ ] ★ 424 Longest Repeating Char Replacement
+- [x] ★ 3 Longest Substring Without Repeating · [ ] ★ 424 Longest Repeating Char Replacement
 - [ ] ★ 567 Permutation in String · [ ] ★ 209 Min Size Subarray Sum · [ ] 643 Max Average Subarray I
 - [ ] 1004 Max Consecutive Ones III · [ ] 438 Find All Anagrams · [ ] 76 Min Window Substring (hard) · [ ] 239 Sliding Window Max (hard)
 
