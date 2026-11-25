@@ -17,3 +17,5 @@ function maxArea (height) {
 };
 
 console.log(maxArea(height))
+// time O(n)
+// space O(1)
