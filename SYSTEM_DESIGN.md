@@ -1,6 +1,7 @@
 # Frontend System Design: Focused Prep
 
 Companion to [PREP_PLAN.md](PREP_PLAN.md) and [QUESTION_BANK.md](QUESTION_BANK.md).
+**Solved questions (RADIO format, one file each): [system-design/](system-design/README.md)**
 
 At 3 YOE, interviews test whether you can design a **frontend feature end to end**. You don't need every security header or test type.
 Plan: learn 8 core topics (~12 hrs), skim the rest, then **practice problems daily**.
