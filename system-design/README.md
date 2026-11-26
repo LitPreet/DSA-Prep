@@ -1,6 +1,6 @@
 # Frontend System Design: Solved Questions
 
-All 20 GreatFrontEnd frontend system design questions, each answered the way you would in a real 45-minute interview.
+All 20 GreatFrontEnd frontend system design questions, plus 8 more matched to Indian product companies. Each one is answered the way you would in a real 45-minute interview.
 Companion to [SYSTEM_DESIGN.md](../SYSTEM_DESIGN.md) (theory and resources) and [PREP_PLAN.md](../PREP_PLAN.md).
 
 Open any file in VS Code with **Cmd+Shift+V** for the formatted preview.
@@ -55,6 +55,19 @@ These companies weigh **machine coding and JS fundamentals** more than system de
 | 03 | [Image carousel](my-level/03-image-carousel.md) | Medium | Banners on every home page. Also a machine coding question | [ ] |
 | 06 | [Modal dialog](my-level/06-modal-dialog.md) | Medium | Component design. Also machine coding practice | [ ] |
 | 05 | [Dropdown menu](my-level/05-dropdown-menu.md) | Medium | Component design. Also machine coding practice | [ ] |
+
+### Tier 1B: not on GreatFrontEnd, matched to my targets (`my-level/`)
+Do these right after Tier 1. Before an interview at one of these companies, do its matching question first.
+| # | Question | Difficulty | Why for my targets | Done |
+|---|---|---|---|---|
+| 21 | [Nested comments (Reddit / YouTube)](my-level/21-nested-comments.md) | Medium | Very common at 3 YOE. Recursion + tree data | [ ] |
+| 23 | [AI chat interface (ChatGPT)](my-level/23-ai-chat-interface.md) | Medium | The common 2026 question: streaming, AbortController | [ ] |
+| 25 | [Live order tracking (Swiggy / Zepto / Blinkit)](my-level/25-live-order-tracking.md) | Medium | Their exact product: real-time status + map | [ ] |
+| 22 | [Notification system (toasts + inbox)](my-level/22-notification-system.md) | Medium | Common everywhere: SSE, toast queue, aria-live | [ ] |
+| 24 | [Design system / component library](my-level/24-design-system.md) | Medium | CRED, Razorpay, Flipkart: tokens, theming, component APIs | [ ] |
+| 26 | [Real-time stock dashboard (Groww / Zerodha)](my-level/26-stock-dashboard.md) | Medium-Hard | Groww's product: WebSocket ticks, throttled rendering | [ ] |
+| 27 | [Payment checkout widget (Razorpay)](my-level/27-payment-checkout-widget.md) | Medium-Hard | Razorpay's product: iframe, postMessage, UPI status | [ ] |
+| 28 | [Multi-step form / KYC onboarding](my-level/28-multi-step-form.md) | Medium | Groww and CRED onboarding: schema forms, autosave, uploads | [ ] |
 
 ### Tier 2: if time allows (`my-level/`)
 | # | Question | Difficulty | Key topics | Done |
